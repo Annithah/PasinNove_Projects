@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <div class="card">
+     <h4 style="color: white; font-size: 20px; text-align: center;">Password Generator</h4> 
+     <br>
+     <div class="input">
+         <input type="text" id="password" disabled style="width: 100%; padding: 4px; border: 0; color: black;" value="generated password">
+     </div> 
+     <br>
+
+     <label for="length" style="color: white;">Length:</label>
+     <span id="length-value"></span>
+     <div class="ranges">
+         <p style="color: white; padding-left: 5px; font-size: 20px;">4</p> 
+         <input type="range" id="length" min="4" max="32">
+         <p style="color: white; padding-right: 5px; font-size: 20px;">32</p> 
+     </div> 
+     <br>
+
+     <p style="color: white;">Settings:</p> 
+     <br>
+     <div class="uppercase">
+         <p style="color: white;">Include Uppercase</p>
+         <label class="toggle">
+            <input type="checkbox" name="uppercase" id="uppercase" checked>
+            <span class="slider"></span>
+         </label>
+     </div>
+     <br>
+
+     <div class="lowercase">
+         <p style="color: white;">Include Lowercase</p>
+         <label class="toggle">
+            <input type="checkbox" name="lowercase" id="lowercase">
+            <span class="slider"></span>
+         </label>
+     </div> 
+     <br>
+
+     <div class="numbers">
+         <p style="color: white;">Include Numbers</p>
+         <label class="toggle">
+            <input type="checkbox" name="numbers" id="numbers">
+            <span class="slider"></span>
+         </label>
+     </div>
+     <br>
+
+     <div class="symbols">
+         <p style="color: white;">Include Symbols</p>
+         <label class="toggle">
+            <input type="checkbox" name="symbols" id="symbols">
+            <span class="slider"></span>
+         </label>
+     </div>
+     <br>
+
+     <div class="button">
+        <button id="generate">Generate Password</button>
+        <button id="copy">Copy</button> 
+     </div>
+   </div>
+
+   <script src="scripts.js"></script>
+</body>
+</html>
