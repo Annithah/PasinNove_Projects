@@ -10,7 +10,7 @@ This project is a password generator that creates random, secure passwords based
 
 ## How it Works
 - The program starts by asking the user to specify the password length (e.g., 1-32 characters).
-- The user is prompted to choose if they want uppercase letters, lowercase letters, numbers, and special characters.
+- The user is prompted to choose if they want uppercase letters, lowercase letters, numbers, and special characters(symbols).
 - Based on the selected criteria, the program generates a random password by randomly picking characters from the available sets (e.g., uppercase letters, lowercase letters, numbers).
 - The generated password is displayed as the output.
 
@@ -21,7 +21,8 @@ This project is a password generator that creates random, secure passwords based
 4. Follow the on-screen prompts to generate a password.
 
 ## Technologies Used
-- JavaScript (Node.js or browser-based)
+- JavaScript
+- HTML
+- CSS
 
-## License
-This project is licensed under the MIT License.
+
